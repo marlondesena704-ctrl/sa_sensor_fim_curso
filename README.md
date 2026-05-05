@@ -3,6 +3,7 @@
 
 Código-fonte
 
+```cpp
 // Definição do pino do sensor de fim de curso / interlock
 int sensor = 7;
 
