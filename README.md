@@ -38,4 +38,6 @@ componentes:
 
 ====================================
 
+Fluxograma
+
 **https://cdn.discordapp.com/attachments/1485802925665030186/1501018781689053244/ChatGPT_Image_4_de_mai._de_2026_21_32_23.png?ex=69fb34ed&is=69f9e36d&hm=df9bc6539934e53bfcd2cdf6b2aa5395dc7a245fca9bbf2f5cc7775745d97243&**
