@@ -40,7 +40,6 @@ Componentes utilizados:
 
 Fluxograma
 
-graph TD
     A[Início: Leitura do G-Code] --> B[Movimentação Eixos X e Y]
     B --> C{Fim de Curso Atingido?}
     
