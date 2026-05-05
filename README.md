@@ -3,25 +3,26 @@
 
 Código-fonte
 
+// Definição do pino do sensor de fim de curso / interlock
 int sensor = 7;
 
-
-
 void setup() {
+  // Configura o pino como entrada para ler o estado do sensor
   pinMode(sensor, INPUT);
+  
+  // Inicia a comunicação serial para monitoramento
   Serial.begin(9600);
 }
 
 void loop() {
- if (digitalRead(sensor) ==HIGH){
-  Serial.println("porta aberta");
-  delay(1000);
-
- }else{
-  Serial.println("porta fechada");
-  delay(1000);
- }
-
+  // Verifica se o sensor foi acionado (Porta Aberta / Limite atingido)
+  if (digitalRead(sensor) == HIGH) {
+    Serial.println("Porta aberta ou Limite atingido");
+    delay(1000); 
+  } else {
+    Serial.println("Sistema operacional - Porta fechada");
+    delay(1000);
+  }
 }
 
 =====================================
