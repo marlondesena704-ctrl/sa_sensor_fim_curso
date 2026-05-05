@@ -1,7 +1,6 @@
 # sa_sensor_fim_curso
 ===================================
-
-Código-fonte
+# Código-fonte
 
 ```cpp
 // Definição do pino do sensor de fim de curso / interlock
@@ -33,10 +32,10 @@ Informações sobre o tema - Desligamento Automático com sensor de fim de curso
 Criar um algoritmo para uma máquina de corte a laser desligar automaticamente.
 Nossa ideia é utilizar um sensor de fim de curso, enquanto o sensor identificar a linha a ser cortada vai continuar cortando até acabar a linha.
 Componentes utilizados:
-- * Arduino (Nano ou Uno)
+- *Arduino (Nano ou Uno)
 - *Sensores de Fim de Curso
 - *Jumper
-- *cabo de conexão do arduino
+- *Cabo de conexão do arduino
 
 ====================================
 
