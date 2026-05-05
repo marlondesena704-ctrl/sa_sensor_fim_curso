@@ -40,4 +40,19 @@ Componentes utilizados:
 
 Fluxograma
 
-**https://cdn.discordapp.com/attachments/1485802925665030186/1501018781689053244/ChatGPT_Image_4_de_mai._de_2026_21_32_23.png?ex=69fb34ed&is=69f9e36d&hm=df9bc6539934e53bfcd2cdf6b2aa5395dc7a245fca9bbf2f5cc7775745d97243&**
+graph TD
+    A[Início: Leitura do G-Code] --> B[Movimentação Eixos X e Y]
+    B --> C{Fim de Curso Atingido?}
+    
+    C -- SIM --> D[PARADA DE EMERGÊNCIA - Hard Limit]
+    D --> D1[Corte de Energia e Travamento Manual]
+    
+    C -- NÃO --> E{Erro de Lógica ou Hardware?}
+    
+    E -- SIM --> F[PARADA CONTROLADA]
+    F --> F1[1. Soft Limits: Desenho fora da área]
+    F --> F2[2. Perda de Passos: Motor travado]
+    F --> F3[3. Interrupção: Falha de Água/Tampa]
+    
+    E -- NÃO --> G[Conclusão do Caminho do Corte]
+    G --> B
