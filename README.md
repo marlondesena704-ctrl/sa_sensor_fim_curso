@@ -38,6 +38,7 @@ Componentes utilizados:
 - *Sensores de Fim de Curso
 - *Jumper
 - *Cabo de conexão do arduino
+- *Motor
 
 ====================================
 
